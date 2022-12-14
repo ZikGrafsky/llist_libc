@@ -7,6 +7,6 @@ void llist_clean(t_linked_list *head){
     while (head){
         t_linked_list *tmp = head;
         head = head->next;
-        llist_delone(tmp);
+        llist_delete_node(tmp);
     }
 }

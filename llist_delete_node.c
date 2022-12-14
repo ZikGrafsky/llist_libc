@@ -3,10 +3,10 @@
 ////////////////////////////////////////////
 #include "llist_libc.h"
 
-void llist_delone(t_linked_list *element){
+void llist_delete_node(t_linked_list *element){
     if (element) {
         if (element->data)
-            free((void *)element->data);
+            free(element->data);
         element->data = NULL;
         element->next = NULL;
         element->prev = NULL;

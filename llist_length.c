@@ -3,7 +3,7 @@
 ////////////////////////////////////////////
 #include "llist_libc.h"
 
-int llistlen(const t_linked_list *linked_list){
+int llist_length(const t_linked_list *linked_list){
     int ret = linked_list ? 1 : 0;
 
     if (linked_list) {
